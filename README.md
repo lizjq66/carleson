@@ -10,6 +10,24 @@ A formalized proof of a generalized Carleson's theorem in the [Lean interactive 
 * [Dependency graph](https://florisvandoorn.com/carleson/blueprint/dep_graph_document.html)
 * [Documentation pages for this repository](https://florisvandoorn.com/carleson/docs/)
 
+## Visualization
+
+This repository includes [Astrolabe](visualization/), a 3D interactive visualization tool that transforms the Lean codebase into an explorable dependency graph. With Astrolabe, you can:
+
+- Explore theorem dependencies as a 3D force-directed graph
+- Search and filter declarations by namespace
+- View proof status and code details
+
+### Running Astrolabe
+
+```bash
+cd visualization
+npm install
+npm run backend &  # Start the Python backend
+npm run dev        # Start the frontend
+```
+
+Then open http://localhost:3000 and load the Carleson project.
 
 ## What is Carleson's theorem?
 
