@@ -1,0 +1,119 @@
+{
+  "nodes": {
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₂": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_symm": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_pos_iff_aux₀": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff_aux₀": {
+      "visible": true,
+      "size": 0.7,
+      "effect": "polyhedron-shell"
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_ne_zero": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsInterpolatedExponents.preservation_positivity_inv_toReal": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff'": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.inv_toReal_iff": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_pos_iff": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ENNReal.sub_toReal_of_le": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ENNReal.toReal_ne_zero_of_Ioo": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₇": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₃": {
+      "visible": true
+    },
+    "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₁": {
+      "visible": true
+    }
+  },
+  "edges": {},
+  "canvas": {
+    "positions": {
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.inv_toReal_iff": {
+        "x": -3.842053117512039,
+        "y": 3.4663672908625793,
+        "z": 7.458219886031382
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₂": {
+        "x": 4.948669715098677,
+        "y": 5.2758043814026685,
+        "z": 3.107435158109927
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_ne_zero": {
+        "x": -6.6819755350722705,
+        "y": -2.5126261000697507,
+        "z": -0.38497909871840674
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff": {
+        "x": 2.916841542654846,
+        "y": -0.7965214759104288,
+        "z": 6.4021757918994044
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff'": {
+        "x": 1.4915409653220486,
+        "y": 8.626111753482023,
+        "z": 5.453816379931813
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_neg_iff_aux₀": {
+        "x": -0.9404271728356435,
+        "y": -7.928842818056174,
+        "z": -0.7881452353714654
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_pos_iff_aux₀": {
+        "x": 8.136704653906179,
+        "y": 1.8152801960921219,
+        "z": -6.562887174908265
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_symm": {
+        "x": -7.915206752386125,
+        "y": 3.428385567287215,
+        "z": -8.342402200145818
+      },
+      "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsInterpolatedExponents.preservation_positivity_inv_toReal": {
+        "x": 1.4324775517124453,
+        "y": -5.887102726973228,
+        "z": -9.614073236978479
+      }
+    },
+    "viewport": {
+      "camera_position": [
+        -28.145019031590685,
+        6.206889524020168,
+        7.043572836862184
+      ],
+      "camera_target": [
+        11.858238846341385,
+        -1.2127964200514074,
+        3.8430033183926655
+      ],
+      "zoom": 1.0,
+      "selected_node_id": "Carleson.ToMathlib.RealInterpolation.InterpolatedExponents.ComputationsChoiceExponent.ζ_equality₁",
+      "selected_edge_id": null
+    }
+  }
+}
