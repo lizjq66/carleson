@@ -5,9 +5,6 @@ A formalized proof of a generalized Carleson's theorem in the [Lean interactive 
 
 * [Zulip channel](https://leanprover.zulipchat.com/#narrow/stream/442935-Carleson) for coordination
 * [Webpage](https://florisvandoorn.com/carleson/)
-* [Blueprint](https://florisvandoorn.com/carleson/blueprint/)
-* [Blueprint as pdf](https://florisvandoorn.com/carleson/blueprint.pdf)
-* [Dependency graph](https://florisvandoorn.com/carleson/blueprint/dep_graph_document.html)
 * [Documentation pages for this repository](https://florisvandoorn.com/carleson/docs/)
 
 ## Visualization
@@ -44,17 +41,16 @@ s_Nf(x):=\sum_{n=-N}^N \widehat{f}_n e^{i nx}.
 Then Carleson's theorem states $\lim_{N\to\infty} s_N f(x) = f(x)$ for almost all $x\in\mathbb{R}$.
 
 Despite being simple to state, its proof is very hard. (It is also quite subtle: for instance, asking for point-wise convergence *everywhere* makes this false.)
-The precise English statement statement can be found [as Theorem 1.0.1](https://florisvandoorn.com/carleson/blueprint/sect0001.html#classical-carleson),
-the corresponding Lean statement is [here](https://florisvandoorn.com/carleson/docs/find/?pattern=ClassicalCarleson#doc),
+The corresponding Lean statement is [here](https://florisvandoorn.com/carleson/docs/find/?pattern=ClassicalCarleson#doc),
 and the Lean proof [here](https://florisvandoorn.com/carleson/docs/find/?pattern=classical_carleson#doc).
 
 ### Metric space Carleson theorem
 
 In this project, we deduce this statement from the boundedness of a certain linear operator, the so-called *Carleson operator*.
 This boundedness holds in much greater generality: we formalise a new generalisation (due to the harmonic analysis group in Bonn) to [doubling metric measure spaces](Carleson/Defs.lean#L40).
-The precise technical result we prove is the **metric spaces Carleson theorem** ([Theorem 1.1.1](https://florisvandoorn.com/carleson/blueprint/sect0001.html#metric-space-Carleson), [Lean statement](https://florisvandoorn.com/carleson/docs/find/?pattern=MetricSpaceCarleson#doc), [Lean proof](https://florisvandoorn.com/carleson/docs/find/?pattern=metric_carleson#doc)).
+The precise technical result we prove is the **metric spaces Carleson theorem** ([Lean statement](https://florisvandoorn.com/carleson/docs/find/?pattern=MetricSpaceCarleson#doc), [Lean proof](https://florisvandoorn.com/carleson/docs/find/?pattern=metric_carleson#doc)).
 
-We also prove a **linearised metric space Carleson theorem** ([Theorem 1.1.2](https://florisvandoorn.com/carleson/blueprint/sect0001.html#linearised-metric-Carleson), [Lean statement](https://florisvandoorn.com/carleson/docs/find/?pattern=LinearizedMetricCarleson#doc), [Lean proof](https://florisvandoorn.com/carleson/docs/find/?pattern=linearized_metric_carleson#doc)),
+We also prove a **linearised metric space Carleson theorem** ([Lean statement](https://florisvandoorn.com/carleson/docs/find/?pattern=LinearizedMetricCarleson#doc), [Lean proof](https://florisvandoorn.com/carleson/docs/find/?pattern=linearized_metric_carleson#doc)),
 which allows proving a generalisation of Carleson's theorem to [Walsh functions](https://en.wikipedia.org/wiki/Walsh_function).
 
 The new definitions needed to verify the *statements* of these theorems are in the file [`Carleson.Defs`](Carleson/Defs.lean)
@@ -94,7 +90,3 @@ To make changes to this repository, please make a pull request. There are more t
 Feel free to make pull requests with code that is work in progress, but make sure that the file(s)
 you've worked have no errors (having `sorry`'s is fine of course).
 
-## Build the blueprint
-
-To test the Blueprint locally, you can compile `print.tex` using XeLaTeX (i.e. `xelatex print.tex` in the folder `blueprint/src`). If you have the Python package `invoke` you can also run `inv bp` which puts the output in `blueprint/print/print.pdf`.
-If you want to build the web version of the blueprint locally, you need to install some packages by following the instructions [here](https://pypi.org/project/leanblueprint/). But if the pdf builds locally, you can also just make a pull request and use the online blueprint.

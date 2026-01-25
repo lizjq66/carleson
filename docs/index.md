@@ -13,9 +13,6 @@ usemathjax: true
 A formalized proof of a generalized Carleson's theorem in Lean.
 
 * [Zulip channel](https://leanprover.zulipchat.com/#narrow/stream/442935-Carleson) for coordination
-* [Blueprint](https://florisvandoorn.com/carleson/blueprint/)
-* [Blueprint as pdf](https://florisvandoorn.com/carleson/blueprint.pdf)
-* [Dependency graph](https://florisvandoorn.com/carleson/blueprint/dep_graph_document.html)
 * [Doc pages for this repository](https://florisvandoorn.com/carleson/docs/)
 
 ## Carleson's theorem
@@ -32,7 +29,3 @@ To push your changes, the easiest method is to use the `Source Control` panel in
 Feel free to make pull requests with code that is work in progress, but make sure that the file(s)
 you've worked have no errors (having `sorry`'s is fine of course).
 
-## Build the blueprint
-
-To test the Blueprint locally, you can compile `print.tex` using XeLaTeX (i.e. `xelatex print.tex` in the folder `blueprint/src`). If you have the Python package `invoke` you can also run `inv bp` which puts the output in `blueprint/print/print.pdf`.
-If you want to build the web version of the blueprint locally, you need to install some packages by following the instructions [here](https://pypi.org/project/leanblueprint/). But if the pdf builds locally, you can also just make a pull request and use the online blueprint.

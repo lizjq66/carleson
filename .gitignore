@@ -9,13 +9,6 @@
 /lake-packages/*
 /build
 *.bak
-## Blueprint
-/blueprint/lean_decls
-/blueprint/print/print.log
-/blueprint/web/
-/blueprint/src/web.paux
-/blueprint/src/web.bbl
-/blueprint/print/
 ## Docs
 docs/_includes/sorries.md
 ## TeX

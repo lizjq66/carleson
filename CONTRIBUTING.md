@@ -1,8 +1,6 @@
 Contributions are welcome!
 
-If you start formalizing any of the results mentioned in the blueprint, please announce this on Zulip first, in the [Carleson channel](https://leanprover.zulipchat.com/#narrow/channel/442935-Carleson/). Small fixes are always welcome, and need not be discussed in advance. Simply make a pull request with a change.
-
-Note: the html blueprint has some rendering issues with certain equations and references. Consult the pdf if you see this on the html page.
+If you start formalizing any of the results, please announce this on Zulip first, in the [Carleson channel](https://leanprover.zulipchat.com/#narrow/channel/442935-Carleson/). Small fixes are always welcome, and need not be discussed in advance. Simply make a pull request with a change.
 
 Some remarks:
 * Some statements will be missing hypotheses. Don't hesitate adding hypotheses to a result, especially if it is already assumed elsewhere. Assuming that functions are measurable is always fine.
@@ -17,13 +15,13 @@ Some remarks:
 
   Feel free to improve these constants:
   - either just write a comment in the Lean file that the constant can be improved to X
-  - or improve the constant in Lean with a comment that this has to be incorporated in the blueprint
+  - or improve the constant in Lean with a comment that this has to be incorporated in the paper
   - or improve the constant both in Lean and the TeX file, making sure you also fix all downstream uses of the lemma.
 * If you are writing lemma statements yourself, make sure to look at the class [`ProofData`](https://florisvandoorn.com/carleson/docs/Carleson/Defs.html#ProofData), which contains a lot of the common data/assumptions used throughout sections 2-8.
 
-Below, I will try to give a translation of some notation/conventions. We use mathcal/mathfrak unicode characters liberally to make the Lean look similar to the blueprint.
+Below, I will try to give a translation of some notation/conventions. We use mathcal/mathfrak unicode characters liberally to make the Lean look similar to the paper.
 
-| Blueprint | Lean       | Remarks |
+| Math | Lean       | Remarks |
 | --------- | ---------- | ------- |
 | `⊂`       | `⊆`       |         |
 | `\dot{\bigcup}` |  `⋃ ...` and `PairwiseDisjoint` separately | notation for disjoint union
@@ -40,14 +38,14 @@ Below, I will try to give a translation of some notation/conventions. We use mat
 | `T_Q f(x)`       | `linearizedCarlesonOperator Q K f x` | The linearized generalized Carleson operator        |
 | `T_𝓝^θ f(x)`       | `nontangentialMaximalFunction θ f x` |   |
 | `Tₚ f(x)`       | `carlesonOn p f x`       |         |
-| `T_ℭ f(x)`       | `carlesonSum ℭ f x`       | The sum of Tₚ f(x) for p ∈ ℭ. In the blueprint only used in chapter 7, but in the formalization we will use it more.        |
+| `T_ℭ f(x)`       | `carlesonSum ℭ f x`       | The sum of Tₚ f(x) for p ∈ ℭ. In the paper only used in chapter 7, but in the formalization we will use it more.        |
 | `Tₚ* f(x)`       | `adjointCarleson p f x`       |         |
 | `T_r g(x)` | `czOperator K r g x` |
 | `T_*^r g(x)` | `simpleNontangentialOperator K r g x` |
 | `e(x)`       | `Complex.exp (Complex.I * x)` |         |
 | `𝔓(I)`       | `𝓘 ⁻¹' {I}` |         |
 | `I ⊆ J`         | `I ≤ J`      | We noticed recently that we cannot (easily) assume that the coercion `Grid X → Set X` is injective. Therefore, Lean introduces two orders on `Grid X`: `I ⊆ J` means that the underlying sets satisfy this relation, and `I ≤ J` means *additionally* that `s I ≤ s J`. The order is what you should use in (almost?) all cases. |
-| `𝓓`         | `Grid`      | The unicode characters were causing issues with Overleaf and leanblueprint (on Windows) |
+| `𝓓`         | `Grid`      |  |
 | `𝔓_{G\G'}`       | `𝔓pos` |         |
 | `𝔓₂`       | `𝔓₁ᶜ` |         |
 | `M_{𝓑, p} f(x)` | `maximalFunction μ 𝓑 c r p f x` |     |
